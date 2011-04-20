@@ -9,11 +9,6 @@ describe PagesController do
       response.should be_success
     end
       
-    it "should ahve the right title" do
-      get 'home'
-      response.should have_selector("title", 
-      :content => "Groupiverse Beta | Home")
-    end
   end
 
   describe "GET 'contact'" do
@@ -22,11 +17,6 @@ describe PagesController do
       response.should be_success
     end
     
-    it "should ahve the right title" do
-      get 'contact'
-      response.should have_selector("title", 
-      :content => "Groupiverse Beta | Contact")
-    end
   end
 
   describe "GET 'about'" do
@@ -35,11 +25,6 @@ describe PagesController do
        response.should be_success
      end
      
-     it "should ahve the right title" do
-       get 'about'
-       response.should have_selector("title", 
-       :content => "Groupiverse Beta | About")
-     end
    end
 
 end
